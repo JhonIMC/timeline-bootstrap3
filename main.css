@@ -183,3 +183,37 @@
   /* left: 43px; */
   right: 90px;
 }
+
+
+
+/* STYLES CARD CON PUNTERO */
+.contenedor {
+  margin-top: 25px;
+  margin-left: 25px;
+  width: 200px;
+  background: #FFFFFF;
+  border: 2px solid #000;
+  padding: 4px;
+  position: relative;
+  min-height: 150px;
+  border-radius: 10px;
+}
+
+.contenedor:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: -6.9px;
+  right:48%;
+  width: 10px;
+  height: 10px;
+  background: #FFFFFF;
+  border-right:2px solid #000;
+  border-bottom:2px solid #000;
+  /* -webkit-transform:rotate(225deg); */
+  -webkit-transform:rotate(225deg);
+  -moz-transform: rotate(225deg); /* Mozilla */
+  -o-transform: rotate(225deg); /* Opera */
+  -ms-transform: rotate(225deg); /* Internet Explorer */
+  transform: rotate(225deg); /* CSS3 */
+}
